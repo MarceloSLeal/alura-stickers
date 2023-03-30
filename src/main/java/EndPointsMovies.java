@@ -10,7 +10,7 @@ public class EndPointsMovies {
     @SneakyThrows
     private String montarRequest(String categoria) {
 
-        String url = "https://api.themoviedb.org/3/movie/" + categoria + "?api_key=" + PegaChave.chave() + "&language=en-US&page=1";
+        String url = "https://api.themoviedb.org/3/movie/" + categoria + "?api_key=" + PegaChave.chaveFilmes() + "&language=en-US&page=1";
         URI endereco = URI.create(url);
         HttpClient cliente = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder(endereco).GET().build();
