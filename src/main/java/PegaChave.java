@@ -11,7 +11,7 @@ public class PegaChave {
         Properties prop = new Properties();
         prop.load(propsInput);
 
-        return prop.getProperty("key");
+        return prop.getProperty("keyMovies");
 
     }
 }
