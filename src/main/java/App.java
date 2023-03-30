@@ -2,8 +2,6 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.IOException;
-import java.io.InputStream;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,7 +24,7 @@ public class App {
             System.out.println(film.getId() + " : " + film.getTitle() + " : " + film.getVote() + " : " + film.getPath());
         }
 
-        ChamarGeradorFigurinhas.chamar(filmes);
+        ChamarGeradorFigurinhas.chamarFilmes(filmes);
 
     }
 }
