@@ -1,3 +1,4 @@
-key=sua_chave_aqui
+keyMovie=sua_chave_aqui
+keyNasa=sua_chave_aqui
 
 obs: renomear o arquivo para config.properties
