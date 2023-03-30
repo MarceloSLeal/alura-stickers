@@ -13,6 +13,10 @@ public class GeradorFigurinhas {
 //        InputStream inputStream = new URL("https://image.tmdb.org/t/p/w500/tmU7GeKVybMWFButWEGl2M4GeiP.jpg").openStream();
         BufferedImage imagemOriginal = ImageIO.read(inputStream);
 
+        if (imagemOriginal == null) {
+            return;
+        }
+
         //cria imagem em memória com tranparência e com tamanho novo
         int largura = imagemOriginal.getWidth();
         int altura = imagemOriginal.getHeight();
